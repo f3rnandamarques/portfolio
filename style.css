@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,400;1,500&family=Press+Start+2P&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,400;1,500&family=Press+Start+2P&display=swap');
 
 *{
     margin: 0;
@@ -10,16 +10,21 @@
 }
 
 body{
-    overflow: hidden;
+   
 }
+
+html {
+    scroll-behavior: smooth; /* Faz a rolagem ser suave */
+}
+
+
 
 .background{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-image: url(background.jpg);
+    background-image: url(images/backgroundImage.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100vh;
+    background-attachment: fixed;
 }
 
 header {
@@ -33,9 +38,16 @@ header {
 
 .cabeçalho-link {
 display: flex;
-gap: 15rem;
 font-weight: 400;
 cursor: pointer;
+
+justify-content: space-around; /* Distribui os elementos */
+align-items: center;
+text-align: center;
+padding-top: 1rem;
+width: 100%;
+flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+transition: all 0.3s ease-in-out; /* Suaviza as mudanças */
 }
 
 .cabeçalho-link a{
@@ -46,6 +58,32 @@ cursor: pointer;
 .cabeçalho-link a:hover {
     color: #5785d5;
     transition: 0.3s all;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite quebrar linha caso a tela seja menor */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    max-width: 1200px; /* Define um limite para o conteúdo */
+    padding: 30px;
+    margin: auto;
+    height: 90vh;
+}
+
+.foto {
+    flex: 0 1 370px;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 button{
@@ -65,27 +103,81 @@ button:hover{
     transition: 0.5s;
 }
 
-.container-text{
-    padding: 150px 0 0 130px;
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.redes-sociais a {
+    color: #5785d5;
+    font-size: 25px;
 }
 
 .text h1{
     color: #fff;
+    font-size: 45px;
 }
 
 .text p{
     color: #fff;
-    font-size: 10px;
+    font-size: 40px;
     font-weight: 300;
-    margin-top: 10px;
 }
 
-.redes-sociais a{
-    color: #5785d5;
+.sobre {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto auto 50px auto;
+    padding: 20px;
+}
+
+.projetos{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#btnToTop {
+    display: none;              /* Oculto por padrão */
+    position: fixed;            /* Fixo na tela */
+    bottom: 20px;               /* 20px da parte inferior */
+    right: 20px;                /* 20px da direita */
+    background-color: #5785d5;  /* Cor de fundo */
+    color: white;               /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;              /* Fica acima de outros elementos */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards div {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.projeto-imagem {
+    width: 400px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
     padding: 10px;
-    margin-top: 5px;
-}
-
-.btn{
-    margin-top: 10px;
 }

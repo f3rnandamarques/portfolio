@@ -13,31 +13,139 @@
     <header>
         <div class="cabeçalho-link">
             <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="#sobre">Sobre</a>
             </li>
             <li>
-                <a href="#">Projetos</a>
+                <a href="#projetos">Projetos</a>
             </li>
             <button>Contato</button>
         </div>
     </header>
-
-    <div class="container-text">
-        <div class="text">
-            <h1>Fernanda Marques</h1>
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem<br> ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem
-                ipsum Lorem ipsum</p>
-            <div class="redes-sociais">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <section id="home">
+        <div class="container">
+            <div class="foto">
+                <img src="images/avatar.jpg" alt="Foto de Fernanda">
             </div>
-            <button class="btn">Sobre mim</button>
+            <div class="text">
+                <h1>Fernanda Marques</h1>
+                <p>Engenheira de Software</p>
+                <div class="redes-sociais">
+                    <a href="https://www.linkedin.com/in/fernandazibordimarques/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="doc/Currículo Fernanda.docx.pdf" download="Currículo Fernanda Marques.pdf">
+                        <button>Download currículo</button>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div>
+            <div style="margin-bottom: 15px;">
+                <h1>Sobre mim</h1>
+            </div>
+            <div>
+                <p>Tenho 27 anos e estou no 6º semestre de Engenharia de Computação. Estou sempre em busca de aprender
+                    mais e me atualizar sobre novas tecnologias. Além dos estudos na faculdade, complemento minha
+                    formação com cursos online, buscando ampliar constantemente meu conhecimento técnico. Em 2024 tive
+                    minha primeira experiência profissional na área de tecnologia como desenvolvedora na empresa de
+                    Midukan. Nessa oportunidade, atuei com desenvolvimento FullStack, o que me permitiu adquirir
+                    habilidades práticas em tecnologias como Angular, NestJs, Docker, TypeScript, além de reforçar meus
+                    conhecimentos em HTML, CSS e JavaScript. Além disso, adquiri conhecimentos sobre boas práticas de
+                    engenharia de software, incluindo testes, versionamento de código com Git e atenção à qualidade e
+                    padronização do código, garantindo legibilidade e facilidade de manutenção.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <div>
+            <div style="margin-bottom: 15px;">
+                <h1>Projetos</h1>
+            </div>
+            <div class="cards">
+
+                <div style="height: 450px; padding: 10px;">
+                    <div>
+                        <h3 style="color: black;">Jogo do número secreto</h3>
+                    </div>
+                    <div>
+                        <img class="projeto-imagem" src="images/nsecreto.PNG" alt="Jogo do número secreto">
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://jogo-do-numero-secreto-jet-two.vercel.app/" target="_blank">
+                            <button>Ver projeto</button>
+                        </a>
+                        <a href="https://github.com/f3rnandamarques/jogo-do-numero-secreto" target="_blank">
+                            <button>Ver código</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="height: 450px; padding: 10px;">
+                    <div>
+                        <h3 style="color: black;">Pacman</h3>
+                    </div>
+                    <div>
+                        <img class="projeto-imagem" src="images/pacman.PNG" alt="Jogo Pacman">
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://f3rnandamarques.github.io/pacman/" target="_blank">
+                            <button>Ver projeto</button>
+                        </a>
+                        <a href="https://github.com/f3rnandamarques/pacman" target="_blank">
+                            <button>Ver código</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="height: 450px; padding: 10px;">
+                    <div>
+                        <h3 style="color: black;">Calculadora de IMC</h3>
+                    </div>
+                    <div>
+                        <img class="projeto-imagem" src="images/calImc.PNG" alt="Jogo Pacman">
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://f3rnandamarques.github.io/calculadora-imc/" target="_blank">
+                            <button>Ver projeto</button>
+                        </a>
+                        <a href="https://github.com/f3rnandamarques/calculadora-imc" target="_blank">
+                            <button>Ver código</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="height: 450px; padding: 10px;">
+                    <div>
+                        <h3 style="color: black;">Pokemon</h3>
+                    </div>
+                    <div>
+                        <img class="projeto-imagem" src="images/pokemon.PNG" alt="Jogo Pacman">
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://f3rnandamarques.github.io/pokemon-game/" target="_blank">
+                            <button>Ver projeto</button>
+                        </a>
+                        <a href="https://github.com/f3rnandamarques/pokemon-game" target="_blank">
+                            <button>Ver código</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato"></section>
 
 </div>
+<button id="btnToTop" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
 
 </body>
 
