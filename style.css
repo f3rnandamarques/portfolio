@@ -10,10 +10,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Faz a rolagem ser suave */
+    scroll-behavior: smooth;
 }
-
-
 
 .background{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -37,13 +35,13 @@ display: flex;
 font-weight: 400;
 cursor: pointer;
 
-justify-content: space-around; /* Distribui os elementos */
+justify-content: space-around;
 align-items: center;
 text-align: center;
 padding-top: 1rem;
 width: 100%;
-flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
-transition: all 0.3s ease-in-out; /* Suaviza as mudanças */
+flex-wrap: wrap;
+transition: all 0.3s ease-in-out;
 }
 
 .cabeçalho-link a{
@@ -59,17 +57,16 @@ transition: all 0.3s ease-in-out; /* Suaviza as mudanças */
 .container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-wrap: wrap; /* Permite quebrar linha caso a tela seja menor */
-    gap: 40px; /* Espaço entre a imagem e o texto */
-    max-width: 1200px; /* Define um limite para o conteúdo */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
     padding: 30px;
     margin: auto;
-    height: 90vh;
+    height: 80vh;
 }
 
 .foto {
-    flex: 0 1 370px;
+    flex: 1 1 370px;
     display: flex;
     justify-content: center;
 }
@@ -99,9 +96,44 @@ button:hover{
     transition: 0.5s;
 }
 
+.gradient-button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    background-size: 200% 200%;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow 0.3s ease;
+    
+    /* Inicia com um leve brilho */
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+    
+    /* Animação para gradiente e brilho */
+    animation: gradientAnimation 3s ease infinite, glowAnimation 1.5s infinite alternate;
+  }
+  
+  /* Animação para o background do gradiente */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 .redes-sociais {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .redes-sociais a {
@@ -141,18 +173,22 @@ button:hover{
 }
 
 #btnToTop {
-    display: none;              /* Oculto por padrão */
-    position: fixed;            /* Fixo na tela */
-    bottom: 20px;               /* 20px da parte inferior */
-    right: 20px;                /* 20px da direita */
-    background-color: #5785d5;  /* Cor de fundo */
-    color: white;               /* Cor do texto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5785d5;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    z-index: 1000;              /* Fica acima de outros elementos */
+    z-index: 1000;
     transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .cards {
@@ -177,3 +213,17 @@ button:hover{
     border-radius: 5px;
     padding: 10px;
 }
+
+footer{
+    background-color: #8ca7e7;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#btnToTop i {
+    opacity: 1;
+    visibility: visible;
+  }

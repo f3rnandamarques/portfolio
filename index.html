@@ -21,7 +21,10 @@
             <li>
                 <a href="#projetos">Projetos</a>
             </li>
-            <button>Contato</button>
+            <button class="gradient-button">
+                <a href="#contato">contato</a>
+            </button>
+
         </div>
     </header>
     <section id="home">
@@ -72,16 +75,18 @@
 
                 <div style="height: 450px; padding: 10px;">
                     <div>
-                        <h3 style="color: black;">Jogo do número secreto</h3>
+                        <h3 style="color: black;">Pokemon</h3>
                     </div>
                     <div>
-                        <img class="projeto-imagem" src="images/nsecreto.PNG" alt="Jogo do número secreto">
+                        <a href="https://f3rnandamarques.github.io/pokemon-game/" target="_blank">
+                            <img class="projeto-imagem" src="images/pokemon.PNG" alt="Jogo Pacman">
+                        </a>
                     </div>
                     <div style="padding: 20px;">
-                        <a href="https://jogo-do-numero-secreto-jet-two.vercel.app/" target="_blank">
+                        <a href="https://f3rnandamarques.github.io/pokemon-game/" target="_blank">
                             <button>Ver projeto</button>
                         </a>
-                        <a href="https://github.com/f3rnandamarques/jogo-do-numero-secreto" target="_blank">
+                        <a href="https://github.com/f3rnandamarques/pokemon-game" target="_blank">
                             <button>Ver código</button>
                         </a>
                     </div>
@@ -92,7 +97,9 @@
                         <h3 style="color: black;">Pacman</h3>
                     </div>
                     <div>
-                        <img class="projeto-imagem" src="images/pacman.PNG" alt="Jogo Pacman">
+                        <a href="https://f3rnandamarques.github.io/pacman/" target="_blank">
+                            <img class="projeto-imagem" src="images/pacman.PNG" alt="Jogo Pacman">
+                        </a>
                     </div>
                     <div style="padding: 20px;">
                         <a href="https://f3rnandamarques.github.io/pacman/" target="_blank">
@@ -106,10 +113,31 @@
 
                 <div style="height: 450px; padding: 10px;">
                     <div>
+                        <h3 style="color: black;">Jogo do número secreto</h3>
+                    </div>
+                    <div>
+                        <a href="https://jogo-do-numero-secreto-jet-two.vercel.app/" target="_blank">
+                            <img class="projeto-imagem" src="images/nsecreto.PNG" alt="Jogo do número secreto">
+                        </a>
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://jogo-do-numero-secreto-jet-two.vercel.app/" target="_blank">
+                            <button>Ver projeto</button>
+                        </a>
+                        <a href="https://github.com/f3rnandamarques/jogo-do-numero-secreto" target="_blank">
+                            <button>Ver código</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="height: 450px; padding: 10px;">
+                    <div>
                         <h3 style="color: black;">Calculadora de IMC</h3>
                     </div>
                     <div>
-                        <img class="projeto-imagem" src="images/calImc.PNG" alt="Jogo Pacman">
+                        <a href="https://f3rnandamarques.github.io/calculadora-imc/" target="_blank">
+                            <img class="projeto-imagem" src="images/calImc.PNG" alt="Calculadora de IMC">
+                        </a>
                     </div>
                     <div style="padding: 20px;">
                         <a href="https://f3rnandamarques.github.io/calculadora-imc/" target="_blank">
@@ -121,31 +149,38 @@
                     </div>
                 </div>
 
-                <div style="height: 450px; padding: 10px;">
-                    <div>
-                        <h3 style="color: black;">Pokemon</h3>
-                    </div>
-                    <div>
-                        <img class="projeto-imagem" src="images/pokemon.PNG" alt="Jogo Pacman">
-                    </div>
-                    <div style="padding: 20px;">
-                        <a href="https://f3rnandamarques.github.io/pokemon-game/" target="_blank">
-                            <button>Ver projeto</button>
-                        </a>
-                        <a href="https://github.com/f3rnandamarques/pokemon-game" target="_blank">
-                            <button>Ver código</button>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section id="contato"></section>
-
 </div>
+
+<footer id="contato">
+    <div class="footer-container">
+        <p><i class="fa-regular fa-envelope"></i> Email: f3rnandamarques@gmail.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i> Telefone: (14) 99904-9766</p>
+        <p><i class="fa-brands fa-github"></i> github: github.com/f3rnandamarques</p>
+    </div>
+</footer>
+
 <button id="btnToTop" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function () {
+        const btn = document.getElementById('btnToTop');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.opacity = '1';
+            btn.style.visibility = 'visible';
+        } else {
+            btn.style.opacity = '0';
+            btn.style.visibility = 'hidden';
+        }
+    };
+</script>
 
 </body>
 
