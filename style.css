@@ -154,9 +154,9 @@ button:hover{
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
     margin: auto auto 50px auto;
-    padding: 20px;
+    padding: 5px;
 }
 
 .projetos{
