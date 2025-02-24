@@ -62,7 +62,7 @@ transition: all 0.3s ease-in-out;
     width: 80%;
     padding: 30px;
     margin: auto;
-    height: 90vh;
+    height: 80vh;
     gap: 5%;
 }
 
@@ -131,15 +131,11 @@ button:hover{
     }
   }
   
-.redes-sociais {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .redes-sociais a {
     color: #5785d5;
     font-size: 25px;
+    margin: auto;
 }
 
 .text h1{
