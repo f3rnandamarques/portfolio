@@ -60,7 +60,7 @@ transition: all 0.3s ease-in-out;
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
-    padding: 30px;
+    padding: 5vh;
     margin: auto;
     height: 80vh;
     gap: 5%;
@@ -134,7 +134,7 @@ button:hover{
 
 .redes-sociais a {
     color: #5785d5;
-    font-size: 25px;
+    font-size: 30px;
     margin: auto;
 }
 
@@ -199,7 +199,7 @@ button:hover{
 .cards div {
     background-color: #f0f0f0;
     border-radius: 5px;
-    flex: 1 1 400px;
+    /* flex: 1 1 400px; */
     text-align: center;
 }
 
